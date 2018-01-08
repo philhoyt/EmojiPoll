@@ -22,15 +22,15 @@ class Poll extends React.Component {
       },
       body: JSON.stringify({
         fields: {
-          'Emoji Choice': this.state.emoji,
+          "Emoji Choice": this.state.emoji
         }
       })
     });
   }
 
-  handleSelect(event){
+  handleSelect(event) {
     this.setState({
-      emoji : event.target.value
+      emoji: event.target.value
     });
   }
 
